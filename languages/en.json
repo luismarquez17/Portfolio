@@ -1,0 +1,14 @@
+{
+    "profile": {
+        "rol": "Programming Student",
+        "description": "Passionate about new technologies and especially the CSS and Javascript ecosystem. Currently a Ruby on Rails student. My purpose is to learn as much as possible about programming and web development."      
+    },
+    "experience": {
+        "first-job-title": "Junior Front end Developer",
+        "first-job-dates": "February 2024 - Current",
+        "first-job-description": "I have developed basic/intermediate level projects with HTML and CSS languages.",
+        "second-job-title": "english B2",
+        "second-job-dates": "January 2024 - Current",
+        "secong-job-description": "I am level B2, intermediate/advanced, in the English language, I have been attending English classes intensively and constantly for approximately one year. I can start conversations in English on basic topics or related to music fluently but not natively."
+    }
+}

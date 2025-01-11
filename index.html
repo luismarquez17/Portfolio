@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfolio</title>
+    <style>
+        /* Estilos básicos para el tema oscuro y claro */
+        body.dark {
+            background-color: #121212;
+            color: white;
+        }
+        body.light {
+            background-color: white;
+            color: black;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        body.dark .card {
+            background-color: #1e1e1e;
+        }
+    </style>
+</head>
+<body class="dark">
+    <header class="header">
+        <div class="switches">
+            <div id="toggle-theme" class="toggle-theme">
+                <img id="toggle-icon" class="toggle-theme_icon" src="assets/icons/moon.svg" alt="icon theme">
+                <p id="toggle-text" class="toggle-theme_text">Dark mode</p>
+            </div>
+        </div>
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="es">
+                <img src="assets/icons/venezuela.png" alt="">
+            </div>
+            <div class="flags__item" data-language="en">
+                <img src="assets/icons/united-states.png" alt="">
+            </div>
+        </div>
+        <div id="toggle-colors" class="colors">
+            <div data-color="hsl(214, 84%, 56%)" class="colors_item colors_item--blue"></div>
+            <div data-color="hsl(150, 84%, 56%)" class="colors_item colors_item--green"></div>
+            <div data-color="hsl(276, 84%, 55%)" class="colors_item colors_item--purple"></div>
+            <div data-color="hsl(46, 84%, 56%)" class="colors_item colors_item--orange"></div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="column column--left">
+            <!-- PROFILE CARD -->
+            <article class="card card--profile">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/mi foto.jpg" alt="">
+                </div>
+                <div class="card__header">
+                    <h2 class="card__title">Dev Luis</h2>
+                    <p class="card__subtitle no-margin" data-section="profile" data-value="rol">Front end and Back end developer</p>
+                </div>
+                <div class="card__body">
+                    <div class="card__link">
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:luismarquezocando2006@gmail.com">luismarquezocando2006</a>
+                    </div>
+                    <div class="card__link">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <a href="tel:+58 424-6208725">+58 424-6208725</a>
+                    </div>
+                    <p class="card__text" data-section="profile" data-value="description">
+                        Estudiante de programación, apasionado de las nuevas tecnologías y en especial del ecosistema de CSS y Javascript. <br /> Actualmente estudiante de Ruby on Rails. Mi propósito es aprender todo lo posible sobre la programación y desarrollo web.
+                    </p>
+                </div>
+            </article>
+            <article class="card card--experience">
+                <h2 class="card__title">Experiences</h2>
+                <div class="experience">
+                    <img src="assets/misImagenes/logo fondo redondeado blanco.png" alt="logo" class="experience__image">
+                    <div class="experience__info">
+                        <p class="experience__time" data-section="experience" data-value="first-job-dates">
+                            February 2024 - Current
+                        </p>
+                        <h3 class="experience__job" data-section="experience" data-value="first-job-dates">Junior Front end Developer</h3>
+                        <p class="experience__description">He desarrollado proyectos nivel básico/intermedio con los lenguajes HTML Y CSS.</p>
+                    </div>
+                </div>
+                <!--Segunda barra de experiencia-->
+                <div class="experience">
+                    <img src="assets/misImagenes/logo fondo redondeado blanco.png" alt="logo" class="experience__image">
+                    <div class="experience__info">
+                        <p class="experience__time" data-section="experience" data-value="second-job-dates">
+                            January 2024 - Current
+                        </p>
+                        <h3 class="experience__job" data-section="experience" data-value="second-job-title">Inglés B2</h3>
+                        <p class="experience__description">Soy nivel B2, intermedio/Avanzado, en el lenguaje inglés, tengo un año aproximadamente asistiendo a clases de inglés de manera intensiva y constante. Puedo entablar conversaciones en inglés de temas básicos o relacionados a la música de manera fluida pero no nativa.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!--Primer recuadro (Hobbies)-->
+
+            <article class="card card--hobbies">
+                <h2 class="card__title">Hobbies</h2>
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/unknown_2025.01.10-15.27.png" alt="Edit videos">
+                </div>
+                <h3 class="hobbie__title">Edit Videos</h3>
+                <p class="car__text">Unos de mis Hobbies editar videos para plataformas como Youtube o TikTok. Suelo editar en mis tiempos libres una o dos veces a la semana 3 o 4 videos. Cuando tengo tiempo edito videos musicales o de videojuegos como pasatiempo.</p>
+                <!--segundo recuadro dentro de (Hobbies)-->
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/fondops5.webp" alt="Edit videos">
+                </div>
+                <h3 class="hobbie__title">Play VideoGames</h3>
+                <p class="car__text">Otro de mis pasatiempos es jugar videojuegos como Warzone o juegos Mundo abierto.</p>
+            </article>
+
+            <!--segundo recuadro (Jobs)-->
+
+            <article class="card card--hobbies">
+                <h2 class="card__title">Jobs</h2>
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/bateria.hobbie.jpg" alt="Play the Drums">
+                </div>
+                <h3 class="hobbie__title">Play The Drums</h3>
+                <p class="car__text">Unos de mis trabajos es tocar la batería. La toco desde los 4 años y he hecho de la música una carrera profesional. Actualmente toco la batería para grupos de mi ciudad. Suelo practicarla todos los días, y Grabo covers para mi canal de Youtube e Instagram.</p>
+            </article>
+
+        </section>
+        <section class="column column--right">
+            <article class="card">
+                <h2 class="card__title">Front End</h2>
+                <small>Años de experiencia</small>
+                <div class="skills"></div>
+                <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">1</span>
+                </div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">HTML</p>
+                        <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">CSS</p>
+                        <div class="skills__bar skills__bar--50"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">JavaScript</p>
+                        <div class="skills__bar skills__bar--40"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <h2 class="card__title">Backend</h2>
+                <small>Años de experiencia</small>
+                <div class="skills"></div>
+                <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">2</span>
+                </div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">Ruby</p>
+                        <div class="skills__bar skills__bar--80"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Python</p>
+                        <div class="skills__bar skills__bar--40"></div>
+                    </div>
+                </div>
+            </article>
+            <!-- Tercer Recuadro -->
+            <article class="card">
+                <h2 class="card__title">Design</h2>
+                <small>Años de experiencia</small>
+                <div class="skills"></div>
+                <div class="skills__header">
+                    <span class="skills__start-level">0</span>
+                    <span class="skills__start-level">4</span>
+                </div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">CapCut</p>
+                        <div class="skills__bar skills__bar--70"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">Davinci</p>
+                        <div class="skills__bar skills__bar--40"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!--Primer proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/copia de netflix.png" alt="Netflix copia" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                        <span class="project__tag">#Responsive</span>
+                    </div> 
+                <h2 class="card__title">Réplica de Netflix</h2>
+                <p class="card__text">Uno de mis mejores y más bonitos proyectos! Una replica casi exacta de la página de streaming Netflix.</p>
+                <p class="card__text">Está realizada con HTML, CSS Y JavaScript, es muy importante destacar que es una página responsiva por lo que se puede ver en dispositivos moviles al igual que PCs de escritorio.</p>
+                <div class="buttons">
+                    <a href="/replica de pagina de netflix/index (2).html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Segundo proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/login page.png" alt="Login Page Project" class="card__image">
+                </div>
+                <div class="project"> 
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                    </div> 
+                <h2 class="card__title">Login Page</h2>
+                <p class="card__text">Una página web que hice el año pasado como práctica. se puede ver que utilicé HTML y CSS para la parte de los estilos</p>
+                <p class="card__text">No es responsiva y no tiene JavaScript debido a que solo es una práctica de Front End.</p>
+                <div class="buttons">
+                    <a href="/login page/index.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Tercer proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/timed card.png" alt="Timed cards" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                    </div> 
+                <h2 class="card__title">Carrusel de Tarjetas temporizadas</h2>
+                <p class="card__text">Un carrusel de tarjetas que pueden ir cambiando automática o manualmente a medida que avanza el tiempo o se le ordene.</p>
+                <p class="card__text">Esta página contiene su HTML, CSS Y JavaScript. No es una página responsiva por lo que solo se puede ver correctamente en ordenadores de escritorio.</p>
+                <div class="buttons">
+                    <a href="/timed-card-carousel-slider-using-html-css-and-javascript/index.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Cuarto proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/quiz dee paises.png" alt="Quiz de países" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                        <span class="project__tag">#Responsive</span>
+                    </div> 
+                <h2 class="card__title">Quiz de países</h2>
+                <p class="card__text">Un corto pero colorido juego que se basa en preguntar a los jugadores sobre cierta bandera aleatoria, los jugadores deben seleccionar el nombre de la bandera correctamente o de lo contrario se le restaran esos puntos a su puntuacion final. </p>
+                <p class="card__text">Esta página está realizada con HTML, CSS Y JavaScript. Es una página responsiva por lo que vale la pena probarla si estás en un dipositivo móvil. Si los adivinaste todos los países tu puntuación será reflejada al final.</p>
+                <div class="buttons">
+                    <a href="/Quiz de preguntas/index.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Quinto proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/web.png" alt="Web" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                        <span class="project__tag">#Responsive</span>
+                    </div> 
+                <h2 class="card__title">Web Profesional</h2>
+                <p class="card__text">Una web profesional que se puede utilizar para una marca sea empresa o personal, tiene estilo oscuro y recuadros personalisables de características de dicha empresa o planes y precios de un servicio o producto a vender.</p>
+                <p class="card__text">Está realizada con HTML para su estructura, CSS para darle su estilo y un poco de JavaScript para las funciones. Es una página responsiva por lo que podrá ajustarse a cualquier dispositivo móvil y cualquier ordenador de escritorio. La pagina tiene varios aspectos a mejorar pero es una base sólida para comenzar.</p>
+                <div class="buttons">
+                    <a href="/pagina web/nomi.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Sexto proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/boton.png" alt="boton" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                        <span class="project__tag">#Responsive</span>
+                    </div> 
+                <h2 class="card__title">Botón de Light Mode</h2>
+                <p class="card__text">Uno de mis proyectos de práctica antiguos. Un simple botón que hace un cambio entre Dark Mode y light Mode.</p>
+                <p class="card__text">Está hecho con HTML, CSS y Javascript para el correcto funcionamiento del botón de cambio. Se puede decir que es responsive ya que se adapta al tamaño de tu pantalla, pero es solo un botón de prueba.</p>
+                <div class="buttons">
+                    <a href="/toggle button/indedx.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--Septimo proyecto-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/Dino1.png" alt="Dino" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                    </div> 
+                <h2 class="card__title">Dinosaurio de Chrome</h2>
+                <p class="card__text">El clásico juego del dinosaurio de Goolgle Chrome pero colorido!</p>
+                <p class="card__text">Está hecho con HTML, CSS y JavaScrip. El juego funciona igual que el original, la dificultad avanza a medida que pasa el tiempo, al igual que tu puntuación.</p>
+                <div class="buttons">
+                    <a href="/dinosaurio/index.html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+            <!--proyecto 8-->
+
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <img src="assets/misImagenes/Dino2.png" alt="Dino2" class="card__image">
+                </div>
+                <div class="project">
+                    <div class="project__tags">
+                        <span class="project__tag">#HTML</span>
+                        <span class="project__tag">#CSS</span>
+                        <span class="project__tag">#JavaScript</span>
+                    </div> 
+                <h2 class="card__title">Dinosaurio de Chrome parte 2</h2>
+                <p class="card__text">El clásico juego del dinosaurio de Goolgle Chrome pero ahora con un nivel personalizado y nuevo.</p>
+                <p class="card__text">Está hecho con HTML, CSS y JavaScrip. El juego funciona igual que el original, la dificultad avanza a medida que pasa el tiempo, al igual que tu puntuación.</p>
+                <div class="buttons">
+                    <a href="/dinosaurio 2.0/index (1).html" class="button button--ghost">Demo</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
